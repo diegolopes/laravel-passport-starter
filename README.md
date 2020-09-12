@@ -8,3 +8,4 @@
 ### Todo:
  - [X] API de autenticação Passport
  - [ ] Front-end básico com React.js
+ - [ ] Rotas - Registrar, esqueci a senha
