@@ -7,7 +7,7 @@
 
 - Back-end PHP usando Laravel 7
 - API de autenticação com Passport: <https://laravel.com/docs/7.x/passport>
-[!]
+
 ### To-do:
 **Back-end**
  - [x] Registrar - OAuth2 Passport
