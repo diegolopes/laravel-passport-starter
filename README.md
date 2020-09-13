@@ -8,7 +8,13 @@
 - Back-end PHP usando Laravel 7
 - API de autenticação com Passport: <https://laravel.com/docs/7.x/passport>
 [!]
-### Todo:
- - [X] API de autenticação Passport
- - [ ] Front-end básico com React.js
- - [ ] Rotas - Registrar, esqueci a senha
+### To-do:
+**Back-end**
+ - [x] Registrar - OAuth2 Passport
+ - [X] Login - OAuth2 Passport
+ - [X] "Esqueci a senha" - Laravel built-in
+
+**Front-end**
+- [X] Página inicial com form de login
+- [ ] Form para registrar
+- [ ] Form "esqueci a senha"
