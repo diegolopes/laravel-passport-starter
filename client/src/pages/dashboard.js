@@ -44,7 +44,11 @@ function Dashboard() {
                     {
                     userData.map((items,i) => (
                         console.log(items),
-                        <li key={i} >{items.email}</li>
+                        <>
+                        <li key={i}>{items.email}</li>
+                        <li key={i}>{items.name}</li>
+                        <li key={i}>{items.created_at}</li>
+                        </>
                     ))
                     }
                 </ul>
