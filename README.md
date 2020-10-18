@@ -18,3 +18,7 @@
 - [X] Página inicial com form de login
 - [ ] Form para registrar
 - [ ] Form "esqueci a senha"
+
+**Documentação**
+- [ ] Instalação do projeto
+- [ ] Instruções de contribuição
