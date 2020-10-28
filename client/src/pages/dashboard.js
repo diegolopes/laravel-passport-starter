@@ -9,8 +9,8 @@ var cookies = new Cookies();
 
 function Dashboard() {
     const [userData,setUserData] = useState([]);
-    useEffect(()=>{
 
+    useEffect(()=>{
         async function loadUserData(){
             let token = cookies.get('token')
 
@@ -21,17 +21,12 @@ function Dashboard() {
             }
 
             console.table(authHeaders);
-
             const response = await axios.get('http://localhost:8000/api/dashboard',{headers:authHeaders})
             setUserData([response.data.items]);
         }
 
         loadUserData();
-
-
-
     },[])
-
 
     return(
         <>
@@ -39,20 +34,18 @@ function Dashboard() {
             <Container>
                 <h1>Bem vindo</h1>
                 <h3>Confira seus dados:</h3>
-
                 <ul>
                     {
-                    userData.map((items,i) => (
+                    userData.map((items) => (
                         console.log(items),
                         <>
-                        <li key={i}>{items.email}</li>
-                        <li key={i}>{items.name}</li>
-                        <li key={i}>{items.created_at}</li>
+                            <li key={items.email}>Email: {items.email}</li>
+                            <li key={items.name}>Nome: {items.name}</li>
+                            <li key={items.created_at}>Cadastro: {items.created_at}</li>
                         </>
                     ))
                     }
                 </ul>
-
             </Container>
         </>
     )
